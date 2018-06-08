@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Vue.js</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <div id="app">
+    <p>{{ title }} </p>
+    <span v-bind:title="message">
+      Привет
+    </span>
+    <p v-if="seen">I'm here</p>
+    <button v-on:click="printSometh">ClickMe</button>
+    <p/>
+    <input v-model="inText"/>
+    <p>{{ inText }}</p>
+  </div>
+
+  <script src="js/main.js "></script>
+</body>
+</html>
