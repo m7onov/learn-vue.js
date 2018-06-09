@@ -6,19 +6,18 @@
 </head>
 <body>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
 
   <div id="app">
-    <p>{{ title }} </p>
-    <span v-bind:title="message">
-      Привет
-    </span>
-    <p v-if="seen">I'm here</p>
-    <button v-on:click="printSometh">ClickMe</button>
-    <p/>
-    <input v-model="inText"/>
-    <p>{{ inText }}</p>
+    <p>
+      <input v-model="question"/>
+    </p>
+    <p>{{answer}}</p>
+    <img v-bind:src="img_src"/>
   </div>
 
   <script src="js/main.js "></script>
 </body>
 </html>
+
